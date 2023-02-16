@@ -1,0 +1,128 @@
+@import '../Variable/index';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+.padding-top {
+  padding-top: 124px;
+  @media (min-width: 1580px) {
+    padding-top: 130px;
+  }
+  @include contact-width {
+    padding-top: 100px;
+  }
+  @include mobile {
+    padding-top: 60px;
+  }
+}
+
+.padding-bottom {
+  padding-bottom: 130px;
+
+  @include contact-width {
+    padding-bottom: 100px;
+  }
+  @include mobile {
+    padding-bottom: 60px;
+  }
+}
+// h1
+h1 {
+  font-size: 8.8rem !important;
+  line-height: 82px !important;
+  color: $primary-color !important;
+  font-weight: 700 !important;
+  @include contact-width {
+    font-size: 7.7rem !important;
+    line-height: 74px !important;
+  }
+  @include tablet {
+    font-size: 5.5rem !important;
+    line-height: 50px !important;
+  }
+  @include mobile {
+    font-size: 3.8rem !important;
+    line-height: 40px !important;
+  }
+}
+// h2
+h2 {
+  font-size: 5.5rem !important;
+  font-size: 55px !important;
+  line-height: 54px !important;
+  font-weight: 700 !important;
+  color: $secondary-color !important;
+  margin-bottom: 24px !important;
+  @include contact-width {
+    font-size: 4.4rem !important;
+    line-height: 50px !important;
+  }
+  @include tablet {
+    font-size: 3.2rem !important;
+    line-height: 36px !important;
+    margin-bottom: 30px !important;
+  }
+  @include mobile {
+    font-size: 2.8rem !important;
+    line-height: 30px !important;
+    margin-bottom: 15px !important;
+  }
+}
+// h4
+h4 {
+  font-size: 2.6rem !important;
+  line-height: 28px !important;
+  font-weight: 700 !important;
+  color: $secondary-color !important;
+  margin-bottom: 7px !important;
+  @include tablet {
+    font-size: 2rem !important;
+    margin-bottom: 5px !important;
+  }
+  @include mobile {
+    font-size: 2.4rem !important;
+  }
+}
+
+// h5
+h5 {
+  color: $main-color !important;
+  font-size: 2.4rem !important;
+  line-height: 35px !important;
+  font-weight: 500 !important;
+  margin-bottom: 8px !important;
+
+  @include tablet {
+    font-size: 2.2rem !important;
+    line-height: 30px !important;
+  }
+  @include mobile {
+    font-size: 1.8rem !important;
+    line-height: 18px !important;
+  }
+}
+// P
+p {
+  font-size: 2.2rem !important;
+  line-height: 30px !important;
+  font-weight: 500 !important;
+  color: $text-color !important;
+  margin-bottom: 14px !important;
+  @include contact-width {
+    font-size: 2rem !important;
+    line-height: 28px !important;
+  }
+  @include tablet {
+    font-size: 1.8rem !important;
+    line-height: 26px !important;
+  }
+  @include mobile {
+    font-size: 1.6rem !important;
+    line-height: 26px !important;
+    margin-bottom: 10px;
+  }
+}
+
+.white {
+  color: $primary-color !important;
+}
