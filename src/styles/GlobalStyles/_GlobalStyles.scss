@@ -101,6 +101,7 @@ h5 {
     line-height: 18px !important;
   }
 }
+
 // P
 p {
   font-size: 2.2rem !important;
@@ -125,4 +126,131 @@ p {
 
 .white {
   color: $primary-color !important;
+}
+
+// Swiper
+
+// Swiper slider
+
+.mySwiper {
+  height: 400px;
+  .swiper {
+    width: 100%;
+  }
+}
+
+// css pagtion swiper
+.swiper {
+  position: relative;
+  padding: 0px 0px 100px 0 !important;
+
+  .swiper-pagination {
+    position: absolute;
+    bottom: 80px !important;
+  }
+}
+
+.swiper-button-next {
+  transition: all 0.3s ease-in-out !important;
+  &:hover {
+    transform: translateX(5px);
+  }
+  &:hover::after {
+    background-color: $button-color;
+  }
+}
+
+.swiper-button-prev {
+  transition: all 0.3s ease-in-out !important;
+  &:hover {
+    transform: translateX(-5px);
+  }
+  &:hover::after {
+    background-color: $button-color;
+  }
+}
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(102, 102, 102, 0.4) !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  margin: 0 8px !important;
+  transition: all 0.2s linear;
+}
+
+.swiper-pagination-bullet-active {
+  background: #a3a3a3 !important;
+  transform: scale(1.16);
+  border: 1px solid transparent !important;
+}
+
+// css navigation swiper
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: unset !important;
+  height: unset !important;
+  transition: all 0.1s linear;
+  border-radius: 50%;
+}
+.swiper-button-next {
+  right: 320px !important;
+  @include tablet {
+    right: 200px !important;
+  }
+  @include mobile {
+    right: 100px !important;
+  }
+  @media (max-width:575px) {
+    right: 70px !important;
+  }
+}
+.swiper-button-prev {
+  left: 320px !important;
+  @include tablet {
+    left: 200px !important;
+  }
+  @include mobile {
+    left: 100px !important;
+  }
+  @media (max-width:575px) {
+    left: 70px !important;
+  }
+}
+
+.swiper-button-next:after {
+  content: '>' !important;
+  font-size: 2.8rem !important;
+  color: white !important;
+  @include mobile {
+    font-size: 2.2rem;
+  }
+}
+
+.swiper-button-prev:after {
+  content: '<' !important;
+  font-size: 2.8rem !important;
+  color: white !important;
+  @include mobile {
+    font-size: 2.2rem;
+  }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: unset !important;
+  background-color: $main-color;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  @include flex();
+  line-height: unset !important;
+  color: black;
+
+  @include mobile {
+    width: 30px !important;
+    height: 30px !important;
+  }
 }

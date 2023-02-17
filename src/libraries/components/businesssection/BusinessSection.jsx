@@ -14,7 +14,7 @@ function BusinessSection() {
       <Row className={cx('justify-content-center')}>
         <Col xxl={10} xl={10} lg={10} md={9} xs={12}>
           <div className={cx('wrapper-content')}>
-            <h1 data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="700" className={cx('main-content')}>
+            <h1 data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="700" className={cx('main-content')}>
               Improve & Innovate
               <br />
               Business Trends
