@@ -15,7 +15,6 @@ function DefaultLayout({ children, title }) {
   useEffect(() => {
     setTitle(title);
   }, [title]);
-
   return (
     <div>
       <HeaderMain />

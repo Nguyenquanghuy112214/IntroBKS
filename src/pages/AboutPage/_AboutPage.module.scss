@@ -1,0 +1,13 @@
+@import '../../styles/Variable/index';
+.client {
+  background: url(../../assets/img/about/service-background-img.jpg) no-repeat center;
+  background-size: cover;
+  height: 747px;
+  @include contact-width {
+    height: auto;
+  }
+}
+.sevices {
+  background: url(../../assets/img/home/service-background-img.jpg) no-repeat center;
+  background-size: cover;
+}

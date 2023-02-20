@@ -9,7 +9,36 @@ const configRoutes = [
     icons: '',
     name: 'Home',
     hiddenMenu: false,
-
+  },
+  {
+    path: routePath.AboutPage,
+    element: lazy(() => import('~/pages/AboutPage/AboutPage')),
+    icons: '',
+    name: 'About',
+    hiddenMenu: false,
+    layout: 'navigation',
+    title: 'About Us',
+    btn: 'About',
+  },
+  {
+    path: routePath.NewsPage,
+    element: lazy(() => import('~/pages/NewsPage/NewsPage')),
+    icons: '',
+    name: 'News',
+    hiddenMenu: false,
+    layout: 'navigation',
+    title: 'Six Column',
+    btn: 'Blog',
+  },
+  {
+    path: routePath.TeamPage,
+    element: lazy(() => import('~/pages/TeamPage/TeamPage')),
+    icons: '',
+    name: 'Team',
+    hiddenMenu: false,
+    layout: 'navigation',
+    title: 'Our Team',
+    btn: 'Team',
   },
   {
     path: routePath.QDTS,
@@ -17,8 +46,7 @@ const configRoutes = [
     icons: '',
     name: 'QUY ĐỊNH TUYỂN SINH',
     hiddenMenu: false,
-    layout:'navigation'
-
+    layout: 'navigation',
   },
   {
     path: routePath.TTTS,
@@ -26,7 +54,7 @@ const configRoutes = [
     icons: '',
     name: 'THÔNG TIN TUYỂN SINH',
     hiddenMenu: false,
-    layout:'navigation'
+    layout: 'navigation',
   },
   {
     path: routePath.DKTS,
@@ -34,7 +62,7 @@ const configRoutes = [
     icons: '',
     name: 'ĐĂNG KÝ TUYỂN SINH',
     hiddenMenu: false,
-    layout:'navigation'
+    layout: 'navigation',
   },
   {
     path: routePath.TCKQ,
@@ -42,7 +70,7 @@ const configRoutes = [
     icons: '',
     name: 'TRA CỨU KẾT QUẢ',
     hiddenMenu: false,
-    layout:'navigation'
+    layout: 'navigation',
   },
   {
     path: routePath.HDDK,
@@ -50,7 +78,7 @@ const configRoutes = [
     icons: '',
     name: 'HƯỚNG DẪN ĐĂNG KÝ',
     hiddenMenu: false,
-    layout:'navigation'
+    layout: 'navigation',
   },
   {
     path: routePath.TCDT,
@@ -58,7 +86,7 @@ const configRoutes = [
     icons: '',
     name: 'TRA CỨU ĐIỂM THI VÀO 10',
     hiddenMenu: false,
-    layout:'navigation'
+    layout: 'navigation',
   },
 
   // Not Found

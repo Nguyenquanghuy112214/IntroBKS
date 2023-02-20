@@ -53,3 +53,15 @@
     cursor: pointer;
   }
 }
+
+.hoverNone {
+  color: white;
+  transition: all 0s ease-in-out;
+  &:hover {
+    color: inherit;
+    background: transparent;
+    transform: translateY(0);
+    cursor: pointer;
+    color: white;
+  }
+}

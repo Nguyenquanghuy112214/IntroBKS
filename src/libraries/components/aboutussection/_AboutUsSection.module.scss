@@ -1,0 +1,102 @@
+@import '../../../styles/Variable/index';
+
+.about-left-icon {
+  position: relative;
+  &::before {
+    content: '';
+    background: url(../../../assets/img/about-Curve-shape.png) no-repeat top left;
+    position: absolute;
+    width: 363px;
+    height: 360px;
+    top: -30px;
+    left: -30px;
+    z-index: -1;
+    @include contact-width {
+      width: 250px;
+      height: 250px;
+      background-size: contain;
+    }
+    @include tablet {
+      width: 200px;
+      height: 200px;
+      top: -24px;
+      left: -24px;
+      background-size: contain;
+    }
+  }
+  @include mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .about-img {
+    @include contact-width {
+      width: 280px;
+    }
+    @include tablet {
+      width: 240px;
+    }
+    @include mobile {
+      width: 40vw;
+    }
+    @media only screen and (max-width: 365px) {
+      width: 90vw;
+    }
+  }
+}
+
+.about-left-img {
+  position: absolute;
+  top: 50px;
+  right: 133px;
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    top: 0;
+    right: 30px;
+  }
+  @include contact-width {
+    top: 0px;
+    right: 30px;
+    width: 133px;
+  }
+
+  @include tablet {
+    top: 0px;
+    right: 0px;
+    width: 133px;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+// video
+.about-video {
+  top: -218px;
+  left: 218px;
+  @include contact-width {
+    top: -108px;
+    left: 120px;
+    img {
+      width: 280px;
+    }
+  }
+
+  @include tablet {
+    top: -107px;
+    left: 169px;
+    img {
+      width: 240px;
+    }
+  }
+  @include mobile {
+    position: inherit !important;
+    top: 0;
+    left: 0;
+    img {
+      width: 42vw;
+    }
+  }
+
+  @media only screen and (max-width: 365px) {
+    display: none;
+  }
+}

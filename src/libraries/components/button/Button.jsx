@@ -6,11 +6,12 @@ import classNames from 'classnames/bind';
 import styles from './_Button.module.scss';
 const cx = classNames.bind(styles);
 
-function Button({ title, link, transparent,block,hoverW }) {
+function Button({ title, link, transparent,block,hoverW,hoverNone }) {
   const classes = cx('contactus', {
     transparent,
     block,
-    hoverW
+    hoverW,
+    hoverNone
   });
 
   return (
