@@ -1,8 +1,11 @@
 export const routePath = {
   HomePage: '/',
-  About: '/about',
-  News: '/news',
+  AboutPage: '/about',
+  NewsPage: '/news',
+  TeamPage: '/team',
+ 
   Services: '/services',
   Page: '/page',
-  Team: '/team',
+ 
+
 };

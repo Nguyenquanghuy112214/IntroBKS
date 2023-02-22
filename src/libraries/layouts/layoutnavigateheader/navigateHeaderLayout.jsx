@@ -4,15 +4,16 @@ import HeaderSub from '~/libraries/layouts/headersub/HeaderSub';
 import FooterMain from '~/libraries/layouts/footer/footer';
 import { useEffect } from 'react';
 
-function NavigateHeaderLayout({ children, title }) {
+function NavigateHeaderLayout({ children, title, btn }) {
   const { setTitle } = useDocument();
 
   useEffect(() => {
     setTitle(title);
   }, [title]);
+  console.log(btn);
   return (
     <div>
-      <HeaderSub />
+      <HeaderSub title={title} btn={btn} />
       {children}
       <FooterMain />
     </div>

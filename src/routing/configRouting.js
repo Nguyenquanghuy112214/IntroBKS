@@ -11,29 +11,37 @@ const configRoutes = [
     hiddenMenu: false,
   },
   {
-    path: routePath.About,
+    path: routePath.AboutPage,
     element: lazy(() => import('~/pages/AboutPage/AboutPage')),
     icons: '',
     name: 'About',
     hiddenMenu: false,
     layout: 'navigation',
+    title: 'About Us',
+    btn: 'About',
   },
   {
-    path: routePath.News,
+    path: routePath.NewsPage,
     element: lazy(() => import('~/pages/NewsPage/NewsPage')),
     icons: '',
     name: 'News',
     hiddenMenu: false,
     layout: 'navigation',
+    title: 'Six Column',
+    btn: 'Blog',
   },
   {
-    path: routePath.Page,
-    element: lazy(() => import('~/pages/PagesPage/PagesPage')),
+    path: routePath.TeamPage,
+    element: lazy(() => import('~/pages/TeamPage/TeamPage')),
     icons: '',
-    name: 'News',
+    name: 'Team',
     hiddenMenu: false,
     layout: 'navigation',
+    title: 'Our Team',
+    btn: 'Team',
   },
+
+
   {
     path: routePath.Services,
     element: lazy(() => import('~/pages/ServicesPage/ServicesPage')),
@@ -42,14 +50,7 @@ const configRoutes = [
     hiddenMenu: false,
     layout: 'navigation',
   },
-  {
-    path: routePath.Team,
-    element: lazy(() => import('~/pages/TeamPage/TeamPage')),
-    icons: '',
-    name: 'Team',
-    hiddenMenu: false,
-    layout: 'navigation',
-  },
+
 
   // Not Found
   {

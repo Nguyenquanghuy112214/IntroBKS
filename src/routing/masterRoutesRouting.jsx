@@ -20,9 +20,9 @@ export default function MasterRoute() {
           <Route
             path={route.path}
             element={
-              <Layout>
+              <Layout title={route.title} btn={route.btn}>
                 <Suspense fallback={<Loading />}>
-                  <Page />
+                  <Page/>
                 </Suspense>
               </Layout>
             }
