@@ -23,10 +23,10 @@ import styles from './_headermain.module.scss';
 const cx = classNames.bind(styles);
 
 export default function HeaderMain() {
-  const [active,setActive]= useState(false)
+  const [active, setActive] = useState(false);
   const handMenuMb = () => {
-    setActive(!active)
-  }
+    setActive(!active);
+  };
   return (
     <Container className={cx('ctn-fluid')} fluid style={{ padding: 0 }}>
       <header>
@@ -75,9 +75,9 @@ export default function HeaderMain() {
           </Row>
         </div>
         <div onClick={handMenuMb} className={cx('wrapper-iconclose')}>
-          <IconClose  />
+          <IconClose />
         </div>
-        <Container fluid className={cx('wrapper-menumb',`${active?'active':''}`)}>
+        <Container fluid className={cx('wrapper-menumb', `${active ? 'active' : ''}`)}>
           <MenuMb />
         </Container>
       </header>
@@ -94,23 +94,28 @@ export default function HeaderMain() {
             </a>
           </li>
         </ul>
-        <Container  className={cx('container-content')}>
+        <Container className={cx('container-content')}>
           <Row className={cx('justify-content-center')}>
             <Col xxl={10} xl={10} lg={10} md={9} xs={12}>
               <div className={cx('wrapper-content')}>
-                <h1  data-aos="fade-down"  data-aos-anchor-placement="center-bottom" data-aos-duration="700"  className={cx('main-content')}>
+                <h1 data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="700" className={cx('main-content')}>
                   Create New Ways
                   <br />
                   to Better Invest
                 </h1>
-                <p data-aos="fade-up"  data-aos-anchor-placement="center-bottom"  data-aos-duration="700"  className={cx('sub-content','white')}>
+                <p
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
+                  data-aos-duration="700"
+                  className={cx('sub-content', 'white')}
+                >
                   Duis aute irure dolor in reprehenderit in voluptate velit cillum
                   <br />
                   nulla pariatur nostrud exercitation.
                 </p>
-                <div  data-aos="fade-up"  data-aos-anchor-placement="center-bottom"  data-aos-duration="700" className={cx('wrapper-button')}>
-                  <Button title="Get Started" link="/"  />
-                  <Button title="Learn More" link="/" transparent  />
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="700" className={cx('wrapper-button')}>
+                  <Button title="Get Started" link="/" />
+                  <Button title="Learn More" link="/" transparent />
                 </div>
               </div>
             </Col>

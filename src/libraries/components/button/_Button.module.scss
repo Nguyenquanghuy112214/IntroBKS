@@ -13,6 +13,7 @@
   @include mobile {
     padding: 4px 20px;
     font-size: 1.5rem;
+   
   }
   &:hover {
     color: $primary-color;
@@ -47,7 +48,7 @@
 .hoverW {
   transition: transform 0.4s ease-in-out;
   &:hover {
-    color: black;
+   
     background: $primary-color;
     transform: translateY(-8px);
     cursor: pointer;
@@ -65,3 +66,9 @@
     color: white;
   }
 }
+=======
+  &:hover a {
+    color: black;
+  }
+}
+

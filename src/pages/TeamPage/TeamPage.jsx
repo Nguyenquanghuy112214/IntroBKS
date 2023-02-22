@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 // Components
@@ -26,3 +27,4 @@ const TeamPage = () => {
 };
 
 export default TeamPage;
+

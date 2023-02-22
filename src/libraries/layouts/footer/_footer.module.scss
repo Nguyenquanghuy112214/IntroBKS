@@ -4,13 +4,25 @@
   position: relative;
   background: $secondary-color;
   background-size: cover;
-  height: 300px;
-  padding-top: 80px;
+  height: 400px;
+  padding-top: 180px;
   overflow: hidden;
+  margin-top: -380px;
+  padding-bottom: 100px;
   width: 100%;
+  // float: left;
+  @include contact-width {
+    height: 440px;
+    padding-top: 220px;
+  }
+  @include tablet {
+    padding-top: 180px;
+  }
   @include mobile {
-    padding-top: 20px;
+    margin-top: -180px;
+    padding-top: 100px;
     text-align: center;
+    padding-bottom: 60px;
   }
 
   //   &::before {
@@ -45,7 +57,7 @@
       font-weight: 500 !important;
       color: #97a5bb !important;
       @include mobile {
-        margin-bottom: 40px !important;
+        margin-bottom: 30px !important;
       }
       br {
         @include mobile {
@@ -75,8 +87,8 @@
         top: 9px;
         left: -13px;
         @include mobile {
-            height: 0;
-            width: 0;
+          height: 0;
+          width: 0;
         }
       }
       a {
@@ -93,5 +105,4 @@
   @include mobile {
     display: none;
   }
-  
 }

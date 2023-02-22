@@ -14,13 +14,13 @@ function BlogSection() {
   return (
     <div className={cx('blog-section')}>
       <Container>
-        <div className={cx('blog-headings','text-center')}>
+        <div data-aos="fade-down" data-aos-duration="700" className={cx('blog-headings','text-center')}>
           <h5>Our News</h5>
           <h2>Latest Blog Pots</h2>
         </div>
         <Row>
           <Col lg={4} md={4}>
-            <div className={cx('blog-item')}>
+            <div data-aos="fade-up" data-aos-duration="800" className={cx('blog-item')}>
               <figure>
                 <img src={anh1} alt="" />
               </figure>
@@ -51,7 +51,7 @@ function BlogSection() {
             </div>
           </Col>
           <Col lg={4} md={4}>
-            <div className={cx('blog-item')}>
+            <div data-aos="fade-down" data-aos-duration="800" className={cx('blog-item')}>
               <figure>
                 <img src={anh1} alt="" />
               </figure>
@@ -82,7 +82,7 @@ function BlogSection() {
             </div>
           </Col>
           <Col lg={4} md={4}>
-            <div className={cx('blog-item')}>
+            <div data-aos="fade-up" data-aos-duration="800" className={cx('blog-item')}>
               <figure>
                 <img src={anh1} alt="" />
               </figure>
