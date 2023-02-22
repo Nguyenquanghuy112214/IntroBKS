@@ -61,7 +61,7 @@ function CaseSection() {
     <div className={cx('case-sec')}>
       <Container>
         <div className={cx('case-inner-sec')}>
-          <div className={cx('case-heading')}>
+          <div data-aos="zoom-in-up" data-aos-duration="700" className={cx('case-heading')}>
             <h5>Recently Completed</h5>
             <h2>Our Latest Case Studies</h2>
           </div>

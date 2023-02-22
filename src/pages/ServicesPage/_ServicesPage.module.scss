@@ -1,0 +1,58 @@
+@import '../../styles/Variable/index';
+
+// service-detail
+.service-detail {
+  padding-top: 60px;
+ 
+  &-sec {
+    .service-img {
+      figure {
+        margin-bottom: 50px;
+        width: 100%;
+        @include tablet {
+            margin-bottom: 30px !important;
+          }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .service-detail-text {
+    }
+  }
+}
+
+// overview-sec
+.overview-sec {
+  margin-top: 60px;
+  @include tablet {
+    margin-top: 30px !important;
+  }
+  .overview-left-sec {
+    .benefits-sec {
+      @include tablet {
+        display: none;
+      }
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        li {
+          svg {
+            font-size: 3rem;
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// service-sec-image
+.service-sec-image {
+  figure {
+    img {
+      width: 100%;
+    }
+  }
+}

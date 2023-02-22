@@ -1,23 +1,24 @@
+import { routePath } from '~/routing/pathRouting';
 export const listMenu = [
   {
     id: 1,
     name: 'Home',
-    link: '/',
+    link: routePath.HomePage,
   },
   {
     id: 2,
-    name: 'Abot us',
-    link: '/',
+    name: 'About us',
+    link: routePath.About,
   },
   {
     id: 3,
     name: 'News',
-    link: '/',
+    link: routePath.News,
   },
   {
     id: 4,
     name: 'Services',
-    link: '/',
+    link: routePath.Services,
     chidrent: [
       {
         name: 'Hello',
@@ -40,7 +41,7 @@ export const listMenu = [
   {
     id: 5,
     name: 'Pages',
-    link: '/',
+    link: routePath.Page,
     chidrent: [
       {
         name: 'Pages1',
@@ -63,6 +64,6 @@ export const listMenu = [
   {
     id: 6,
     name: 'Team',
-    link: '/',
+    link: routePath.Team,
   },
 ];

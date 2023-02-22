@@ -9,56 +9,46 @@ const configRoutes = [
     icons: '',
     name: 'Home',
     hiddenMenu: false,
-
   },
   {
-    path: routePath.QDTS,
-    element: lazy(() => import('~/pages/QDTSPage/QDTSPage')),
+    path: routePath.About,
+    element: lazy(() => import('~/pages/AboutPage/AboutPage')),
     icons: '',
-    name: 'QUY ĐỊNH TUYỂN SINH',
+    name: 'About',
     hiddenMenu: false,
-    layout:'navigation'
-
+    layout: 'navigation',
   },
   {
-    path: routePath.TTTS,
-    element: lazy(() => import('~/pages/TTTSPage/TTTSPage')),
+    path: routePath.News,
+    element: lazy(() => import('~/pages/NewsPage/NewsPage')),
     icons: '',
-    name: 'THÔNG TIN TUYỂN SINH',
+    name: 'News',
     hiddenMenu: false,
-    layout:'navigation'
+    layout: 'navigation',
   },
   {
-    path: routePath.DKTS,
-    element: lazy(() => import('~/pages/DKTSPage/DKTSPage')),
+    path: routePath.Page,
+    element: lazy(() => import('~/pages/PagesPage/PagesPage')),
     icons: '',
-    name: 'ĐĂNG KÝ TUYỂN SINH',
+    name: 'News',
     hiddenMenu: false,
-    layout:'navigation'
+    layout: 'navigation',
   },
   {
-    path: routePath.TCKQ,
-    element: lazy(() => import('~/pages/TCKQPage/TCKQPage')),
+    path: routePath.Services,
+    element: lazy(() => import('~/pages/ServicesPage/ServicesPage')),
     icons: '',
-    name: 'TRA CỨU KẾT QUẢ',
+    name: 'Services',
     hiddenMenu: false,
-    layout:'navigation'
+    layout: 'navigation',
   },
   {
-    path: routePath.HDDK,
-    element: lazy(() => import('~/pages/HDDKPage/HDDKPage')),
+    path: routePath.Team,
+    element: lazy(() => import('~/pages/TeamPage/TeamPage')),
     icons: '',
-    name: 'HƯỚNG DẪN ĐĂNG KÝ',
+    name: 'Team',
     hiddenMenu: false,
-    layout:'navigation'
-  },
-  {
-    path: routePath.TCDT,
-    element: lazy(() => import('~/pages/TCDTPage/TTTSPage')),
-    icons: '',
-    name: 'TRA CỨU ĐIỂM THI VÀO 10',
-    hiddenMenu: false,
-    layout:'navigation'
+    layout: 'navigation',
   },
 
   // Not Found

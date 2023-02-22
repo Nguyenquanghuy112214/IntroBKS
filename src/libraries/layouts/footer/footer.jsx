@@ -14,7 +14,7 @@ export default function MainFooter() {
       <Container>
         <Row>
           <Col lg={4} md={4}>
-            <div className={cx('footer-detail')}>
+            <div data-aos="fade-down" data-aos-duration="800" className={cx('footer-detail')}>
               <figure>
                 <img src={anh1} alt="" />
               </figure>
@@ -27,7 +27,7 @@ export default function MainFooter() {
               </p>
             </div>
           </Col>
-          <Col lg={4} md={4} className={cx("ps-5",'d-nones')}>
+          <Col data-aos="fade-up" data-aos-duration="800" lg={4} md={4} className={cx("ps-5",'d-nones')}>
             {/*  */}
             <div className={cx('footer-links')}>
               <h4>Userful Links</h4>
@@ -61,8 +61,8 @@ export default function MainFooter() {
             </div>
           </Col>
           <Col lg={4} md={4} >
-            <div className={cx('footer-links')}>
-              <h4>Userful Links</h4>
+            <div data-aos="fade-down" data-aos-duration="800" className={cx('footer-links')}>
+              <h4>Contact Info</h4>
               <ul className={cx('list-unstyled')}>
                 <li className={cx('position-relative')}>
                   <Link className="d-inline-block" to="/">
