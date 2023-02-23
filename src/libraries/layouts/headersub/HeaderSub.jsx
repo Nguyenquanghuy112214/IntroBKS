@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 // Layout
 import { Container, Row, Col } from 'react-bootstrap';
 // Router
@@ -21,9 +21,14 @@ const cx = classNames.bind(styles);
 
 export default function HeaderSub(props) {
   const [active, setActive] = useState(false);
+  const [menuActive, setMenuActive] = useState('/');
   const handMenuMb = () => {
     setActive(!active);
   };
+  useEffect(() => {
+    setActive(false)
+    setMenuActive(window.location.pathname);
+  }, [window.location.pathname]);
   const { title, btn } = props;
   return (
     <Container className={cx('ctn-fluid')} fluid style={{ padding: 0 }}>
@@ -40,7 +45,10 @@ export default function HeaderSub(props) {
                 {listMenu !== undefined &&
                   listMenu.map((menu, index) => {
                     return (
-                      <li className={cx('item', `${menu.chidrent ? 'after' : ''}`)} key={index}>
+                      <li
+                        className={cx('item', `${menu.chidrent ? 'after' : ''}`, `${menuActive === menu.link ? 'active' : ''}`)}
+                        key={index}
+                      >
                         <Link to={menu.link}>{menu.name}</Link>
                         {menu.chidrent && (
                           <ul className={cx('wrapper-menu__children')}>
@@ -83,7 +91,7 @@ export default function HeaderSub(props) {
         <Container className={cx('container-content')}>
           <Row className={cx('justify-content-center')}>
             <Col xxl={10} xl={10} lg={10} md={9} xs={12}>
-              <div className={cx('wrapper-content')}>
+              <div className={cx('wrapper-content','text-center')}>
                 <h1 data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="700" className={cx('main-content')}>
                   {title}
                 </h1>

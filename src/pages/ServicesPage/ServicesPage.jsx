@@ -144,7 +144,9 @@ function ServicesPage() {
             </Row>
           </Container>
         </div>
-        <FormSection />
+        <div className={cx('padding-bottom')}>
+          <FormSection />
+        </div>
       </div>
     </>
   );

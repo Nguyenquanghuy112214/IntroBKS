@@ -3,9 +3,7 @@ export const routePath = {
   AboutPage: '/about',
   NewsPage: '/news',
   TeamPage: '/team',
- 
   Services: '/services',
   Page: '/page',
- 
 
 };

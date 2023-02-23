@@ -10,7 +10,7 @@ import classNames from 'classnames/bind';
 import styles from './_DefaultLayout.module.scss';
 const cx = classNames.bind(styles);
 
-function DefaultLayout({ children, title }) {
+function DefaultLayout({ children, title,nomargin }) {
   const { setTitle } = useDocument();
   useEffect(() => {
     setTitle(title);
@@ -19,7 +19,7 @@ function DefaultLayout({ children, title }) {
     <div>
       <HeaderMain />
       {children}
-      <FooterMain />
+      <FooterMain nomargin = {nomargin}/>
     </div>
   );
 }

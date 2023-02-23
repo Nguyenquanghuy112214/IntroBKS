@@ -68,6 +68,10 @@
           .item {
             padding: 8px 23px;
             position: relative;
+            &.active a {
+              color: $main-color;
+
+            }
             a {
               position: relative;
               color: $primary-color;
@@ -148,7 +152,7 @@
             @include flex(start, center, nowrap);
             flex-direction: column;
             .contact-text {
-              color: $primary-color;
+              color: $primary-color !important;
               line-height: 2.4rem;
             }
 
@@ -156,7 +160,7 @@
               font-size: 2.4rem;
               line-height: 2.4rem;
               font-weight: 700;
-              color: $primary-color;
+              color: $primary-color !important;
             }
           }
         }

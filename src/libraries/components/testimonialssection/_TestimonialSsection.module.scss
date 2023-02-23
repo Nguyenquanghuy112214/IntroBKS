@@ -11,8 +11,8 @@
       width: 1053px;
       height: 249px;
       top: 183px;
-      //   left: 27px;
-      left: 148px;
+        left: 47px;
+      // left: 148px;
       z-index: 2;
       @include contact-width {
         width: 897px;
@@ -48,8 +48,8 @@
       }
       .slider-left2 {
         position: absolute;
-        top: 138px;
-        left: 90px;
+        top: 158px;
+        left: 20px;
         @media only screen and (max-width: 1199px) {
           top: 138px;
           left: -14px;
@@ -156,8 +156,8 @@
       }
       .slider-right2 {
         position: absolute;
-        right: 66px;
-        top: 155px;
+        right: 10px;
+        top: 165px;
 
         @media only screen and (max-width: 1199px) {
           right: -8px;

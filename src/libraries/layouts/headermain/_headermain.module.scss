@@ -23,9 +23,9 @@
       background-size: contain;
     }
   }
-  
+
   &::after {
-    content: "";
+    content: '';
     background: url(../../../assets/img/Bottom-Right-Shape.png) no-repeat bottom right;
     position: absolute;
     width: 273px;
@@ -68,6 +68,9 @@
           .item {
             padding: 8px 23px;
             position: relative;
+            &.active a{
+              color: $main-color;
+            }
             a {
               position: relative;
               color: $primary-color;
@@ -101,6 +104,10 @@
                 border: 0;
                 font-size: 1.6rem;
                 &:hover {
+                  background-color: #f8f9fa;
+                  color: $main-color;
+                }
+                &.active {
                   background-color: #f8f9fa;
                   color: $main-color;
                 }
@@ -148,7 +155,7 @@
             @include flex(start, center, nowrap);
             flex-direction: column;
             .contact-text {
-              color: $primary-color;
+              color: $primary-color !important;
               line-height: 2.4rem;
             }
 
@@ -156,7 +163,7 @@
               font-size: 2.4rem;
               line-height: 2.4rem;
               font-weight: 700;
-              color: $primary-color;
+              color: $primary-color !important;
             }
           }
         }
@@ -262,8 +269,7 @@
       position: relative;
       margin-bottom: 20px;
       display: inline-block;
- 
- 
+
       &::after {
         content: '';
         background: url(../../../assets/img/Curve-shape.png) no-repeat top left;
@@ -324,7 +330,7 @@
   position: absolute;
   top: 80px;
   left: 50%;
-  transform: translate(-50%,-10%);
+  transform: translate(-50%, -10%);
   background-color: $primary-color;
   width: 92%;
   border-radius: 8px;
@@ -341,7 +347,6 @@
   &.active {
     opacity: 1;
     visibility: visible;
-  transform: translate(-50%,0);
-
+    transform: translate(-50%, 0);
   }
 }

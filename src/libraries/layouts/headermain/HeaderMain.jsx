@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 // Layout
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -23,7 +23,14 @@ import styles from './_headermain.module.scss';
 const cx = classNames.bind(styles);
 
 export default function HeaderMain() {
+  const [menuActive, setMenuActive] = useState('/');
   const [active, setActive] = useState(false);
+  useEffect(() => {
+    setActive(false);
+
+    setMenuActive(window.location.pathname);
+  }, [window.location.pathname]);
+
   const handMenuMb = () => {
     setActive(!active);
   };
@@ -42,7 +49,7 @@ export default function HeaderMain() {
                 {listMenu !== undefined &&
                   listMenu.map((menu, index) => {
                     return (
-                      <li className={cx('item', `${menu.chidrent ? 'after' : ''}`)} key={index}>
+                      <li className={cx('item', `${menu.chidrent ? 'after' : ''}`,`${menuActive === menu.link ? 'active' : ''}`)} key={index}>
                         <Link to={menu.link}>{menu.name}</Link>
                         {menu.chidrent && (
                           <ul className={cx('wrapper-menu__children')}>

@@ -29,6 +29,17 @@ const configRoutes = [
     layout: 'navigation',
     title: 'Six Column',
     btn: 'Blog',
+    nomargin: true,
+  },
+  {
+    path: routePath.Page,
+    element: lazy(() => import('~/pages/PagesPage/PagesPage')),
+    icons: '',
+    name: 'Page',
+    hiddenMenu: false,
+    layout: 'navigation',
+    title: 'Six Column',
+    btn: 'Blog',
   },
   {
     path: routePath.TeamPage,
@@ -41,7 +52,6 @@ const configRoutes = [
     btn: 'Team',
   },
 
-
   {
     path: routePath.Services,
     element: lazy(() => import('~/pages/ServicesPage/ServicesPage')),
@@ -49,8 +59,9 @@ const configRoutes = [
     name: 'Services',
     hiddenMenu: false,
     layout: 'navigation',
+    title: 'Services',
+    btn: 'Services',
   },
-
 
   // Not Found
   {

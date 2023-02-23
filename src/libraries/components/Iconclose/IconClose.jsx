@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Css module
 import classNames from 'classnames/bind';
@@ -7,6 +7,9 @@ const cx = classNames.bind(styles);
 
 function IconClose() {
   const [active, setActive] = useState(false);
+  useEffect(() => {
+    setActive(false)
+  },[window.location.pathname])
   return (
     <div onClick={() => setActive(!active)} className={cx('show-menu', 'nav__toggler')}>
       <div className={active ? cx('line1', 'active') : cx('line1')}></div>

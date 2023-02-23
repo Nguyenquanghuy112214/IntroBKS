@@ -13,9 +13,11 @@ function Button({ title, link, transparent,block,hoverW,hoverNone }) {
     hoverW,
     hoverNone
   });
-
+const handleClick = () => {
+  window.scrollTo(0, 0)
+}
   return (
-    <div className={classes}>
+    <div onClick={handleClick} className={classes}>
       <Link to={link}>{title}</Link>
     </div>
   );

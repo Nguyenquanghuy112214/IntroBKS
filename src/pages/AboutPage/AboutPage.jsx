@@ -7,6 +7,7 @@ import ClientSection from '~/libraries/components/clientsection/ClientSection';
 import VideoSection from '~/libraries/components/videosection/VideoSection';
 import TestimonialSsection from '~/libraries/components/testimonialssection/TestimonialSsection';
 import BlogSection from '~/libraries/components/blogsection/BlogSection';
+import FormSection from '~/libraries/components/formsection/FormSection';
 
 // Css module
 import classNames from 'classnames/bind';
@@ -28,8 +29,11 @@ const AboutPage = () => {
       <div className={cx('padding-top', 'padding-bottom', 'sevices')}>
         <TestimonialSsection />
       </div>
-      <div className={cx('padding-top', 'padding-bottom')}>
+      <div className={cx('padding-top')}>
         <BlogSection />
+      </div>
+      <div className={cx( 'padding-bottom')}>
+        <FormSection />
       </div>
     </>
   );
