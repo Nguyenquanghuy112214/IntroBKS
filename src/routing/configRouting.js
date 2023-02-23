@@ -62,7 +62,16 @@ const configRoutes = [
     title: 'Services',
     btn: 'Services',
   },
-
+  {
+    path: routePath.ContactUsPage,
+    element: lazy(() => import('~/pages/ContactUsPage/ContactUsPage')),
+    icons: '',
+    name: 'ContactUs',
+    hiddenMenu: false,
+    layout: 'navigation',
+    title: 'Contact Us',
+    btn: 'Contact',
+  },
   // Not Found
   {
     path: '*',

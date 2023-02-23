@@ -67,7 +67,7 @@ export default function HeaderMain() {
                     );
                   })}
               </ul>
-              <Button title="Contact us" link="/" />
+              <Button title="Contact us" link="/contact" />
 
               <div className={cx('callus')}>
                 <div className={cx('img-call')}>
