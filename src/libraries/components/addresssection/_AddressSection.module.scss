@@ -1,0 +1,100 @@
+@import '../../../styles/Variable/index';
+.ctn-address {
+  position: relative;
+  background: $primary-color;
+
+  &::after {
+    content: '';
+    background: url(../../../assets//img/Curve-shape2.png) no-repeat bottom right;
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    top: -30px;
+    right: -30px;
+    z-index: 0;
+    @include contact-width {
+      top: -20px;
+      right: -20px;
+      width: 350px;
+      height: 350px;
+      background-size: contain;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+  .adress-right-sec {
+    position: relative;
+    z-index: 2;
+    background: $primary-color;
+    padding: 74px 55px;
+
+    padding-bottom: 0;
+    height: 702px;
+    width: 100%;
+    @include contact-width {
+      padding: 53px 40px;
+    }
+    @include tablet {
+      padding: 10px 20px;
+      height: 441px;
+      margin-left: -15px;
+      width: 320px;
+    }
+    @include mobile {
+      padding: 40px;
+      height: auto;
+      width: auto;
+    }
+    @media only screen and (max-width: 306px) {
+      display: none;
+    }
+    .address-box {
+      padding: 41px 0 36px 38px;
+      box-shadow: 0 0 34px rgb(0 0 0 / 5%);
+      margin-bottom: 20px;
+      border-top: 2px solid #277df6;
+      display: flex;
+      @include tablet {
+        padding: 18px 0 18px 12px;
+        margin-bottom: 8px;
+      }
+    }
+    .wrapper-img {
+      margin-bottom: 0;
+    }
+    .info-right-text {
+      margin-left: 31px;
+    }
+    .info-right-text h4 {
+      margin-bottom: 4px !important;
+    }
+    .info-right-text p {
+      @include contact-width {
+        font-size: 18px !important;
+      }
+    }
+  }
+  .info {
+    height: 702px;
+    img {
+      height: 702px;
+    }
+    @include tablet {
+      width: 405px;
+      height: 441px;
+      img {
+        height: 441px;
+      }
+    }
+    @include mobile {
+      img {
+        max-width: 100vw;
+        width: auto;
+        height: auto;
+      }
+      height: auto;
+      width: auto;
+    }
+  }
+}

@@ -5,5 +5,5 @@ export const routePath = {
   TeamPage: '/team',
   Services: '/services',
   Page: '/page',
-
+  ContactUsPage: '/contact',
 };
